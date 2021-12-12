@@ -1,1 +1,1 @@
-token = "5079860456:AAHh399gI2LlAu8mkoLbpanwJQewTWxdYmw"
+token = "YOUR_TELEGRAM_BOT_TOKEN"

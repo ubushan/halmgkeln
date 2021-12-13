@@ -50,4 +50,4 @@ jobs:
         with:
           to: ${{ secrets.TELEGRAM_CHAT_ID }}
           token: ${{ secrets.TELEGRAM_BOT_TOKEN }}
-          args: New commit ${{ GITHUB_SHA }} from ${{ GITHUB_ACTOR }} in github repo ${{ GITHUB_REPOSITORY }}
+          args: New commit $GITHUB_SHA from $GITHUB_ACTOR in github repo $GITHUB_REPOSITORY

@@ -1,1 +1,1 @@
-token = "YOUR_TELEGRAM_BOT_TOKEN"
+token = "TELEGRAM_BOT_TOKEN"

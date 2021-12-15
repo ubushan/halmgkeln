@@ -1,16 +1,23 @@
 name: Notifier
+
 on: [push]
   
 jobs:
   build:
+
     name: Build
     runs-on: ubuntu-latest
+
     steps:
       - name: Telegram Notify
-        uses: appleboy/telegram-action@0.0.3
-        with: |
-          **${{ github.actor }}** created commit:
-          **Commit message:** ${{ github.event.commits[0].message }}
-          **Repository:** ${{ github.repository }}
-          
-          **See changes:** https://github.com/${{ github.repository }}/commit/${{github.sha}}
+        uses: appleboy/telegram-action@master
+        with:
+          to: ${{ secrets.TELEGRAM_CHAT_ID }}
+          token: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          message: |
+            ${{ github.actor }} created commit:
+            Commit message: ${{ github.event.commits[0].message }}
+            
+            Repository: ${{ github.repository }}
+            
+            See changes: https://github.com/${{ github.repository }}/commit/${{github.sha}}

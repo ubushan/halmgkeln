@@ -1,5 +1,5 @@
 # [DRAFT][TelegramBot] HalmgKeln - Text to speech 
-![CodeChecks](https://github.com/ubushan/halmgkeln/actions/workflows/Code-checks/badge.svg)
+# ![CodeChecks](https://github.com/ubushan/halmgkeln/actions/workflows/checks.yml/badge.svg)
 
 Uses - https://github.com/snakers4/silero-models#text-to-speech
 

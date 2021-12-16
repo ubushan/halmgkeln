@@ -32,10 +32,10 @@ jobs:
           echo Add other actions to build,
           echo test, and deploy your project.
           
-      - name: Gitleaks
-        # You may pin to the exact commit or the version.
-        # uses: zricethezav/gitleaks-action@518e4898c0cd1cc5d9aab6627a2eabd46e81d8da
-        uses: zricethezav/gitleaks-action@v1
-        with:
-          # Path to config (relative to $GITHUB_WORKSPACE)
-          config-path: default
+      # - name: Gitleaks
+      #   # You may pin to the exact commit or the version.
+      #   # uses: zricethezav/gitleaks-action@518e4898c0cd1cc5d9aab6627a2eabd46e81d8da
+      #   uses: zricethezav/gitleaks-action@v1
+      #   with:
+      #     # Path to config (relative to $GITHUB_WORKSPACE)
+      #     config-path: default
